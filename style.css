@@ -13,36 +13,92 @@ html {
 }
 
 body {
+    /*background image test */
+    background-image: url('https://hybrid.concordia.ca/ni_moral/resources/3dPrinter.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    /*scrollable or not*/
     /*verrynice*/
     background-color: rgb(62, 47, 47);
-    color: rgb(249, 174, 174);
+    color: #ff0000;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-content: center;
     /*auto center my stuffs*/
     margin: 0 auto;
-    max-width: 1000px;
+    max-width: 900px;
     /*SCROLL LETSGO */
     overflow-x: auto;
     overflow-y: auto;
-    font-family: 'Courier New', Courier, monospace;
+    /*text related*/
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
-    padding: 25px 25px;
+    line-height: 1.69;
+    padding: 50px 25px;
 
 }
 
 h1 {
+    /*Title*/
     font-size: 50px;
-    margin-top: -20px;
-    margin-bottom: 20px;
-    /*
-    padding: 0px;*/
+    margin-top: 25px;
+    margin-bottom: 50px;
+    /*background-color: rgba(0, 0, 0, 0.7);*/
 }
 
+h1 span {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 7px 7px;
+}
+
+h2 {
+    /*Week 1 header*/
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+
+}
+
+h2 span {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 7px 7px;
+}
+
+h3 {
+    /*Week 2 header*/
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+}
+
+h3 span {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 7px 7px;
+}
+
+h4 {
+    /*Week 2 header*/
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+}
+
+h4 span {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 7px 7px;
+}
+
+
+
 p {
-    color: rgb(255, 176, 87);
-    font-family: 'Courier New', Courier, monospace;
+    /*Any paragraph*/
+    margin-top: 0px;
+    font-size: 17px;
+    color: rgb(255, 150, 150);
+    background-color: rgba(0, 0, 0, 0.7);
     text-align: justify;
 }
 
