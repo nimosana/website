@@ -52,6 +52,7 @@ h1 {
 h1 span {
     background-color: rgba(0, 0, 0, 0.7);
     padding: 7px 7px;
+    border-radius: 10%;
 }
 
 h2 {
@@ -59,12 +60,13 @@ h2 {
     font-size: 30px;
     margin-top: 50px;
     margin-bottom: 0px;
-
 }
 
 h2 span {
     background-color: rgba(0, 0, 0, 0.7);
     padding: 7px 7px;
+    border-top-right-radius: 20%;
+    border-top-left-radius: 20%;
 }
 
 h3 {
@@ -77,10 +79,12 @@ h3 {
 h3 span {
     background-color: rgba(0, 0, 0, 0.7);
     padding: 7px 7px;
+    border-top-right-radius: 20%;
+    border-top-left-radius: 20%;
 }
 
 h4 {
-    /*Week 2 header*/
+    /*image cred header*/
     font-size: 30px;
     margin-top: 50px;
     margin-bottom: 0px;
@@ -89,9 +93,16 @@ h4 {
 h4 span {
     background-color: rgba(0, 0, 0, 0.7);
     padding: 7px 7px;
+    border-radius: 10%;
 }
 
+em {
+    color: #ffffff;
+}
 
+em2 {
+    color: #ff0000;
+}
 
 p {
     /*Any paragraph*/
@@ -100,6 +111,9 @@ p {
     color: rgb(255, 150, 150);
     background-color: rgba(0, 0, 0, 0.7);
     text-align: justify;
+    /*set round border*/
+    border-radius: 1%;
+    caret-color: red;
 }
 
 img {
