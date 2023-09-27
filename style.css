@@ -73,7 +73,7 @@ h3 {
     /*Week 2 header*/
     font-size: 30px;
     margin-top: 50px;
-    margin-bottom: 0px;
+    margin-bottom: -0.5px;
 }
 
 h3 span {
@@ -84,13 +84,27 @@ h3 span {
 }
 
 h4 {
+    /*Week 3 header*/
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: -0.5px;
+}
+
+h4 span {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 7px 7px;
+    border-top-right-radius: 20%;
+    border-top-left-radius: 20%;
+}
+
+h5 {
     /*image cred header*/
     font-size: 30px;
     margin-top: 50px;
     margin-bottom: 0px;
 }
 
-h4 span {
+h5 span {
     background-color: rgba(0, 0, 0, 0.7);
     padding: 7px 7px;
     border-radius: 10%;
@@ -123,7 +137,7 @@ img {
 
 a:link {
     /* default link color*/
-    color: rgb(255, 255, 150);
+    color: rgb(255, 150, 0);
 }
 
 a:hover {
