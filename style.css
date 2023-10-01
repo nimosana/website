@@ -44,6 +44,9 @@ body {
 
 h1 {
     /*Title*/
+    background-image: url('resources/nimosana_darker.gif');
+    background-position: 80px 175px;
+    background-size: 250px;
     font-size: 50px;
     margin-top: 25px;
     margin-bottom: 50px;
@@ -51,6 +54,7 @@ h1 {
 }
 
 h1 span {
+
     background-color: rgba(0, 0, 0, 0.7);
     padding: 7px 7px;
     border-radius: 10%;
@@ -58,7 +62,7 @@ h1 span {
 
 h2 {
     /*Week 1 header*/
-    color: #ffffff;
+    color: aqua;
     font-size: 30px;
     margin-top: 0px;
     margin-bottom: 0px;
@@ -72,7 +76,7 @@ h2 span {
 }
 
 .week1 {
-    color: #ffffff;
+    color: lightblue;
     /* background-image: url('resources/catgif.gif');
     background-repeat: no-repeat;
     background-position: center;
@@ -80,13 +84,14 @@ h2 span {
 }
 
 .week1p {
-    color: #ffffff;
+    color: lightblue;
     margin-bottom: 0px;
 }
 
 h3 {
     /*Week 2 header*/
     color: rgb(255, 145, 0);
+    ;
     font-size: 30px;
     margin-top: 50px;
     margin-bottom: -0.5px;
@@ -122,13 +127,32 @@ h4 span {
 }
 
 h5 {
+    /*Week 4 header*/
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: -0.5px;
+}
+
+h5 span {
+    color: #e5ff00;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 7px 7px;
+    border-top-right-radius: 20%;
+    border-top-left-radius: 20%;
+}
+
+.week4p {
+    color: palegreen;
+}
+
+h6 {
     /*image cred header*/
     font-size: 30px;
     margin-top: 50px;
     margin-bottom: 0px;
 }
 
-h5 span {
+h6 span {
     background-color: rgba(0, 0, 0, 0.7);
     padding: 7px 7px;
     border-radius: 10%;
@@ -145,6 +169,10 @@ em2 {
 
 .em3 {
     color: #ff0000;
+}
+
+.em4 {
+    color: #e5ff00;
 }
 
 p {
@@ -171,7 +199,7 @@ a:link {
 
 a:hover {
     /* mouse on link color*/
-    color: rgb(211, 60, 0);
+    color: rgb(255, 0, 0);
 }
 
 a:active {
