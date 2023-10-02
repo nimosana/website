@@ -209,5 +209,21 @@ a:active {
 
 a:visited {
     /* link already been clicked color*/
-    color: rgb(255, 150, 60);
+    color: rgb(160, 75, 0);
+}
+
+a.week4:link {
+    color: chartreuse;
+}
+
+a.week4:active {
+    color: lime;
+}
+
+a.week4:hover {
+    color: palegreen;
+}
+
+a.week4:visited {
+    color: darkgreen;
 }
