@@ -75,7 +75,7 @@ h2 span {
     border-top-left-radius: 20%;
 }
 
-.week1 {
+.week2 {
     color: lightblue;
     /* background-image: url('resources/catgif.gif');
     background-repeat: no-repeat;
@@ -83,7 +83,7 @@ h2 span {
     background-size: cover; */
 }
 
-.week1p {
+.week2p {
     color: lightblue;
     margin-bottom: 0px;
 }
@@ -104,12 +104,14 @@ h3 span {
     border-top-left-radius: 20%;
 }
 
-.week2p {
+.week3p {
     color: burlywood;
 }
 
 h4 {
     /*Week 3 header*/
+    color: rgb(255, 0, 0);
+    ;
     font-size: 30px;
     margin-top: 50px;
     margin-bottom: -0.5px;
@@ -122,7 +124,7 @@ h4 span {
     border-top-left-radius: 20%;
 }
 
-.week3p {
+.week4p {
     color: rgb(255, 150, 150);
 }
 
@@ -141,38 +143,77 @@ h5 span {
     border-top-left-radius: 20%;
 }
 
-.week4p {
+h5 {
+    /*Week 4 header*/
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: -0.5px;
+}
+
+h5 span {
+    color: #e5ff00;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 7px 7px;
+    border-top-right-radius: 20%;
+    border-top-left-radius: 20%;
+}
+
+.week5p {
     color: palegreen;
 }
 
 h6 {
+    /*Week 4 header*/
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: -0.5px;
+}
+
+h6 span {
+    color: rgb(255, 125, 210);
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 7px 7px;
+    border-top-right-radius: 20%;
+    border-top-left-radius: 20%;
+}
+
+.week6p {
+    color: rgb(255, 200, 255);
+}
+
+.h7 {
     /*image cred header*/
     font-size: 30px;
     margin-top: 50px;
     margin-bottom: 0px;
 }
 
-h6 span {
+.h7 span {
     background-color: rgba(0, 0, 0, 0.7);
     padding: 7px 7px;
     border-radius: 10%;
 }
 
-em {
-    color: rgb(255, 145, 0);
-}
 
-em2 {
+.em2 {
     font-style: italic;
     color: aqua;
 }
 
 .em3 {
-    color: #ff0000;
+    color: rgb(255, 145, 0);
 }
 
 .em4 {
+    color: #ff0000;
+}
+
+.em5 {
     color: #e5ff00;
+}
+
+.em6 {
+    color: rgb(255, 125, 210);
 }
 
 p {
@@ -192,38 +233,54 @@ img {
     justify-self: auto;
 }
 
-a:link {
+a.week4:link {
     /* default link color*/
     color: rgb(255, 150, 0);
 }
 
-a:hover {
+a.week4:hover {
     /* mouse on link color*/
     color: rgb(255, 0, 0);
 }
 
-a:active {
+a.week4:active {
     /* on click color*/
     color: rgb(255, 0, 0);
 }
 
-a:visited {
+a.week4:visited {
     /* link already been clicked color*/
-    color: rgb(160, 75, 0);
+    color: rgb(255, 0, 0);
 }
 
-a.week4:link {
+a.week5:link {
     color: chartreuse;
 }
 
-a.week4:active {
-    color: lime;
+a.week5:active {
+    color: chartreuse;
 }
 
-a.week4:hover {
-    color: palegreen;
+a.week5:hover {
+    color: #e5ff00;
 }
 
-a.week4:visited {
-    color: darkgreen;
+a.week5:visited {
+    color: #e5ff00;
+}
+
+a.week6:link {
+    color: rgb(255, 0, 255);
+}
+
+a.week6:active {
+    color: rgb(255, 0, 255);
+}
+
+a.week6:hover {
+    color: rgb(255, 125, 210);
+}
+
+a.week6:visited {
+    color: rgb(255, 125, 210);
 }
