@@ -38,7 +38,7 @@ ul {
 }
 
 .navbar ul li.current {
-  background-color: #ff80f4aa;
+  background-color: #ffa500aa;
   color: black;
   padding: 50px 0px;
   /* Background color for the current link */
@@ -70,9 +70,7 @@ ul {
 }
 
 body {
-  padding: 0;
-  margin: 0;
-  display: grid;
+
   /* Set up the grid and justify/align to center */
   justify-content: center;
   height: 100vh;
@@ -82,7 +80,7 @@ body {
 }
 
 body {
-  /*background image test */
+  justify-content: center;
   background-image: url('../../resources/nimosana_darker.gif');
   background-repeat: repeat;
   background-position: center;
@@ -98,6 +96,9 @@ body {
   /*auto center my stuffs*/
   margin: auto;
   max-width: auto;
+  /*SCROLL LETSGO */
+  /* overflow-x: auto;
+  overflow-y: auto; */
   /*text related*/
   font-family: Verdana,
     Geneva,

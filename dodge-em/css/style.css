@@ -83,7 +83,7 @@ body {
 
 body {
   /*background image test */
-  background-image: url('/resources/nimosana_darker.gif');
+  background-image: url('../../resources/nimosana_darker.gif');
   background-repeat: repeat;
   background-position: center;
   background-size: 68px;

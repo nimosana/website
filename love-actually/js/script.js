@@ -1,7 +1,7 @@
 /**Exercise 3: Love, Actually
- * @author Nicolas Morales-Sanabriaspeed
+ * @author Nicolas Morales-Sanabria
  * 
- * In obj simulation, the user controls a clown emoji that moves around trying to collect money,
+ * In this simulation, the user controls a clown emoji that moves around trying to collect money,
  *  there are also "fish" (clowns with lipstick) following him around but keeping a set distance,
  *  as the user collects more money the fish get closer to the user. The game ends if the user makes
  *  contact with a fish or if the user collects a set amount of money. */
