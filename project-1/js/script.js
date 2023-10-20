@@ -82,8 +82,8 @@ function gameplaySetup() {
     //Reset the game to its initial state if restarting
     if (restart) {
         user.health = 100;
-        user.x = width/2;
-        user.y = height/2;
+        user.x = width / 2;
+        user.y = height / 2;
         wave = 1;
         evilClowns = [];
         enemyProjectiles = [];
@@ -170,6 +170,7 @@ function win() {
     text(`You survived the clownapping &\n saved Clownette!\n Thanks for playing`, width / 2, height / 2);
     titleClown.x = width / 3;
     titleClownette.x = (width / 3) * 2;
+    titleClown.y = titleClownette.y = height - titleClown.size / 2;
     displayImage(titleClown, 0);
     displayImage(titleClownette, 0);
     noLoop();
@@ -216,7 +217,7 @@ function displayObjects() {
     //draws the walls
     for (let wall of walls) {
         fill('lime');
-        displayImage(wall,1);
+        displayImage(wall, 1);
     }
     //displays the current wave
     push();
@@ -427,7 +428,7 @@ function displayImage(obj, type, specialTexture) {
             image(obj.texture, obj.x - obj.size / 2, obj.y - obj.size / 2, obj.size, obj.size);
             break;
         case 1: //adjust to draw instead of a square (corner)
-            image(obj.texture, obj.x+cameraOffsetX, obj.y+cameraOffsetY, obj.w, obj.h);
+            image(obj.texture, obj.x + cameraOffsetX, obj.y + cameraOffsetY, obj.w, obj.h);
             break;
         case 2: //adjust to draw instead of an ellispe but using a predefined texture
             image(specialTexture, obj.x - obj.size / 2, obj.y - obj.size / 2, obj.size, obj.size);
