@@ -30,7 +30,7 @@ function setup() {
     mouseX = x1 = windowWidth / 2;
     mouseY = y1 = windowHeight / 2;
     horizontalMovement = verticalMovement = 0;
-    size = windowHeight*0.94;
+    size = windowHeight*0.92;
     createCanvas(windowWidth*0.98, size);
     textSize(size * 0.04);
     strokeWeight(size * 0.04)

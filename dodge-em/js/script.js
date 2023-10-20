@@ -61,7 +61,7 @@ function preload() {
 /** Description of setup*/
 function setup() {
     width = windowWidth * 0.98;
-    height = windowHeight * 0.94;
+    height = windowHeight * 0.92;
     createCanvas(width, height);
     textSize(textSizeNumber);
     virus.x = width / 2;

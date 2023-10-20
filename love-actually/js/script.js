@@ -51,7 +51,7 @@ function preload() {
 /** Sets the user's initial position, creates the fish array, places the money and sets the text style*/
 function setup() {
     width = windowWidth * 0.98;
-    height = windowHeight * 0.94;
+    height = windowHeight * 0.92;
     createCanvas(width, height);
     user.size = width * 0.04;
     user.maxSpeed = width * 0.001718;

@@ -53,7 +53,7 @@ function preload() {
 function setup() {
     console.log(`Window width: ${width}, Window height: ${height}`);
     width = windowWidth * 0.98;
-    height = windowHeight * 0.94;
+    height = windowHeight * 0.92;
     createCanvas(width, height);
     user = new Player(width / 2, height / 2, width * 0.039, width * 7.8125E-5, (width * 1.953125E-3) * 2);
     user.texture = userTexture;
