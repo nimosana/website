@@ -14,7 +14,6 @@ html {
 
 ul {
     list-style-type: none;
-    padding: 0;
     margin: 0;
     overflow: hidden;
     position: fixed;
@@ -322,6 +321,7 @@ img {
 
 a.week4:link {
     /* default link color*/
+    padding: 0;
     color: rgb(255, 150, 0);
 }
 
@@ -341,6 +341,7 @@ a.week4:visited {
 }
 
 a.week5:link {
+    padding: 0;
     color: chartreuse;
 }
 
@@ -357,6 +358,7 @@ a.week5:visited {
 }
 
 a.week6:link {
+    padding: 0;
     color: rgb(255, 0, 255);
 }
 
