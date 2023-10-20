@@ -30,8 +30,8 @@ function setup() {
     mouseX = x1 = windowWidth / 2;
     mouseY = y1 = windowHeight / 2;
     horizontalMovement = verticalMovement = 0;
-    size = windowHeight;
-    createCanvas(windowWidth, windowHeight);
+    size = windowHeight*0.94;
+    createCanvas(windowWidth*0.98, size);
     textSize(size * 0.04);
     strokeWeight(size * 0.04)
     textAlign(CENTER, CENTER)
@@ -46,10 +46,10 @@ function draw() {
     //x1 and y1 values determine a position that follows the mouse,
     //the constrain on "map" to keeps the alien's whole head in the canvas
     x1 = constrain(map(mouseX, 0, windowWidth, 0, windowWidth) - (size / 2), -size / 2, (windowWidth * 1));
-    y1 = constrain(map(mouseY, 0, size, 0, size) - ((size / 2) + size * 0.28), -(size * 0.5), 0);
+    y1 = constrain(map(mouseY, 0, size, 0, size) - ((size / 2) + size * 0.28), -(size * 0.5), size);
     //the code without constrain would let the alien follow the cursor up to the corner of the canvas (with map's withinBounds =true)
     // x1 = map(mouseX, 0, size, 0, size, true) - (size / 2), -(size * 0.25), (size * 0.25);
-    // y1 = map(mouseY, 0, size, 0, size, true) - ((size / 2) + 140), -(size * 0.5), 0;
+    // y1 = map(mouseY, 0, size, 0, size, true) - ((size / 2) + size * 0.28), -(size * 0.5), 0;
     // y1 = -(size / 3);
     //randomize colors and determine next movement
     randomColors();

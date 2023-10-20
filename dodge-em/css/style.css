@@ -38,7 +38,7 @@ ul {
 }
 
 .navbar ul li.current {
-  background-color: #00ff00aa;
+  background-color: #00ffffaa;
   color: black;
   padding: 50px 0px;
   /* Background color for the current link */
@@ -98,6 +98,9 @@ body {
   /*auto center my stuffs*/
   margin: auto;
   max-width: auto;
+  /*SCROLL LETSGO */
+  /* overflow-x: auto;
+  overflow-y: auto; */
   /*text related*/
   font-family: Verdana,
     Geneva,
