@@ -50,6 +50,7 @@ ul {
     pointer-events: none;
     /* Make it non-clickable */
 }
+
 .navbar ul li.current a {
     color: black;
 }
@@ -59,16 +60,28 @@ ul {
     font-size: 20pt;
     padding: 0px 20px;
     color: #fff;
+    border: none;
+    transition: .4s ease-in;
+    z-index: 1;
     /* Text color for links */
     text-decoration: none;
     /* Remove underlines from links */
 }
+
+.navbar ul li a::before,
+.navbar ul li a::after {
+    position: absolute;
+    content: "";
+    z-index: -1;
+}
+
 
 .navbar ul li a:hover {
     background-color: #ffffffaa;
     color: black;
     height: 68px;
     padding: 50px 20px;
+    box-shadow: 0 0 25px #ff0000, 0 0 50px #00ff00, 0 0 100px #0000ff, 0 0 200px #000000;
 }
 
 body {
@@ -211,22 +224,7 @@ h5 {
 }
 
 h5 span {
-    color: #e5ff00;
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 7px 7px;
-    border-top-right-radius: 20%;
-    border-top-left-radius: 20%;
-}
-
-h5 {
-    /*Week 4 header*/
-    font-size: 30px;
-    margin-top: 50px;
-    margin-bottom: -0.5px;
-}
-
-h5 span {
-    color: #e5ff00;
+    color: #a5ff7b;
     background-color: rgba(0, 0, 0, 0.7);
     padding: 7px 7px;
     border-top-right-radius: 20%;
@@ -240,11 +238,11 @@ h5 span {
 }
 
 .week5p {
-    color: palegreen;
+    color: rgb(0, 200, 0);
 }
 
 h6 {
-    /*Week 4 header*/
+    /*Week 5 header*/
     font-size: 30px;
     margin-top: 50px;
     margin-bottom: -0.5px;
@@ -264,8 +262,36 @@ h6 span {
     padding: 0px 50px;
 }
 
+
 .week6p {
     color: #ffc8ff;
+}
+
+h6.h7 {
+    /*Week 7 header*/
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: -0.5px;
+}
+
+h6.h7 span {
+    color: #fcff58;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 7px 7px;
+    border-top-right-radius: 20%;
+    border-top-left-radius: 20%;
+    border-bottom-right-radius: 0%;
+    border-bottom-left-radius: 0%;
+}
+
+.week7 {
+    margin: auto;
+    max-width: 1100px;
+    padding: 0px 50px;
+}
+
+.week7p {
+    color: #dbb32e;
 }
 
 .h7 {
@@ -296,11 +322,15 @@ h6 span {
 }
 
 .em5 {
-    color: #e5ff00;
+    color: #a5ff7b;
 }
 
 .em6 {
     color: rgb(255, 125, 210);
+}
+
+.em7 {
+    color: #fcff58;
 }
 
 p {
@@ -343,19 +373,19 @@ a.week4:visited {
 
 a.week5:link {
     padding: 0;
-    color: chartreuse;
+    color: rgb(0, 255, 0);
 }
 
 a.week5:active {
-    color: chartreuse;
+    color: rgb(0, 255, 0);
 }
 
 a.week5:hover {
-    color: #e5ff00;
+    color: #a5ff7b;
 }
 
 a.week5:visited {
-    color: #e5ff00;
+    color: #a5ff7b;
 }
 
 a.week6:link {
@@ -373,4 +403,21 @@ a.week6:hover {
 
 a.week6:visited {
     color: rgb(255, 125, 210);
+}
+
+a.week7:link {
+    padding: 0;
+    color: #ec8e00;
+}
+
+a.week7:active {
+    color: #fcff58;
+}
+
+a.week7:hover {
+    color: #fcff58;
+}
+
+a.week7:visited {
+    color: #fcff58;
 }
