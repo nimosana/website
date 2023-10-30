@@ -1,5 +1,11 @@
-let week7Color = "#000000aa", week7LinkColor = "#000000aa";
+"use strict";
 
+let week7Color = "#000000aa", week7LinkColor = "#000000aa";
+let randomColorR, randomColorG, randomColorB, randomColorREm, randomColorGEm, randomColorBEm;
+setInterval(week8Color, 500);
+function Color(r, g, b) {
+    return "rgb(" + r + ", " + g + "," + b + ")";
+}
 function onClickWeek7() {
     let swap = document.getElementById("week7p").style.color;
 
@@ -8,6 +14,19 @@ function onClickWeek7() {
 
     document.getElementById("week7Link").style.color = week7LinkColor;
     week7LinkColor = swap;
+}
+
+function week8Color() {
+    randomColorR = Math.floor(Math.random() * (200 - 80 + 1)) + 80;
+    randomColorG = Math.floor(Math.random() * (200 - 80 + 1)) + 80;
+    randomColorB = Math.floor(Math.random() * (200 - 80 + 1)) + 80;
+    randomColorREm = Math.floor(Math.random() * (255 - 150 + 1)) + 150;
+    randomColorGEm = Math.floor(Math.random() * (255 - 150 + 1)) + 150;
+    randomColorBEm = Math.floor(Math.random() * (255 - 150 + 1)) + 150;
+    document.getElementById("week8p").style.color = Color(randomColorR, randomColorG, randomColorB);
+    document.getElementById("week8H").getElementsByTagName("span")[0].style.color = Color(randomColorREm, randomColorGEm, randomColorBEm);
+    document.getElementById("week8Em").style.color = Color(randomColorREm, randomColorGEm, randomColorBEm);
+    document.getElementById("week8Em2").style.color = Color(randomColorREm, randomColorGEm, randomColorBEm);
 }
 
 

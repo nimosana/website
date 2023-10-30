@@ -193,7 +193,6 @@ h3 span {
 h4 {
     /*Week 3 header*/
     color: rgb(255, 0, 0);
-    ;
     font-size: 30px;
     margin-top: 50px;
     margin-bottom: -0.5px;
@@ -296,16 +295,63 @@ h6.h7 span {
 
 .h7 {
     /*image cred header*/
+    font-weight: bold;
     font-size: 30px;
     margin-top: 50px;
     margin-bottom: 0px;
 }
 
 .h7 span {
+    /*image cred header*/
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 7px 7px;
+    border-top-right-radius: 20%;
+    border-top-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+    border-bottom-left-radius: 20%;
+}
+
+h6.h8 {
+    /*Week 8 header*/
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: -0.5px;
+}
+
+h6.h8 span {
+    color: #00a4d6;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 7px 7px;
+    border-top-right-radius: 20%;
+    border-top-left-radius: 20%;
+    border-bottom-right-radius: 0%;
+    border-bottom-left-radius: 0%;
+}
+
+.week8 {
+    margin: auto;
+    max-width: 1100px;
+    padding: 0px 50px;
+}
+
+.week8p {
+    color: #c4c4c4;
+}
+
+.h8 {
+    /*image cred header*/
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+}
+
+.h8 span {
     background-color: rgba(0, 0, 0, 0.7);
     padding: 7px 7px;
     border-radius: 10%;
 }
+
+
 
 
 .em2 {
@@ -331,6 +377,10 @@ h6.h7 span {
 
 .em7 {
     color: #fcff58;
+}
+
+.em8 {
+    color: #ffffff;
 }
 
 p {
@@ -419,5 +469,22 @@ a.week7:hover {
 }
 
 a.week7:visited {
+    color: #fcff58;
+}
+
+a.week8:link {
+    padding: 0;
+    color: #ec8e00;
+}
+
+a.week8:active {
+    color: #fcff58;
+}
+
+a.week8:hover {
+    color: #fcff58;
+}
+
+a.week8:visited {
     color: #fcff58;
 }
