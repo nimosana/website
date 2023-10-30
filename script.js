@@ -2,10 +2,13 @@
 
 let week7Color = "#000000aa", week7LinkColor = "#000000aa";
 let randomColorR, randomColorG, randomColorB, randomColorREm, randomColorGEm, randomColorBEm;
+
 setInterval(week8Color, 500);
+
 function Color(r, g, b) {
     return "rgb(" + r + ", " + g + "," + b + ")";
 }
+
 function onClickWeek7() {
     let swap = document.getElementById("week7p").style.color;
 
