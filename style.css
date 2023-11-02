@@ -105,6 +105,7 @@ body {
     overflow-x: auto;
     overflow-y: auto;
     /*text related*/
+    cursor: url('resources/cursor.png'),auto;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
     line-height: 1.69;
@@ -123,6 +124,7 @@ h1 {
     font-size: 50px;
     margin-top: 25px;
     margin-bottom: 50px;
+    cursor: url('resources/nimosana_darker.gif'),auto;
     /*background-color: rgba(0, 0, 0, 0.7);*/
 }
 
