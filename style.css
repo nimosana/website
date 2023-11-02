@@ -110,7 +110,6 @@ body {
     text-align: center;
     line-height: 1.69;
     padding: 102px 0px;
-
 }
 
 h1 {
@@ -124,7 +123,6 @@ h1 {
     font-size: 50px;
     margin-top: 25px;
     margin-bottom: 50px;
-    cursor: url('resources/nimosana_darker.gif'),auto;
     /*background-color: rgba(0, 0, 0, 0.7);*/
 }
 
