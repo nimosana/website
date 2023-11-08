@@ -4,7 +4,18 @@ let week7Color = "#000000aa", week7LinkColor = "#000000aa";
 let randomColorR, randomColorG, randomColorB, randomColorREm, randomColorGEm, randomColorBEm;
 
 setInterval(week8Color, 500);
-
+document.addEventListener("keydown", keyUpListener);
+document.addEventListener("keyup", keyDownListener);
+function keyUpListener(event) {
+    if (event.keyCode == 192) {
+        window.alert("foshizzle");
+    }
+}
+function keyDownListener(event) {
+    if (event.keyCode == 192) {
+        window.alert("foshinononizzzzle");
+    }
+}
 function Color(r, g, b) {
     return "rgb(" + r + ", " + g + "," + b + ")";
 }
