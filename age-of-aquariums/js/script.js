@@ -303,38 +303,3 @@ function keyMovement() {
     user.hook.xOrigin = user.boat.x + (user.boat.w * 0.83);
     user.hook.yOrigin = user.boat.y + (user.boat.h / 2);
 }
-
-// function detectfishCollisions() {
-//     for (let fish1 of school) {
-//         for (let fish2 of school) {
-//             if ((fish1 != fish2) && (dist(fish1.x, fish1.y, fish2.x, fish2.y)) < fish1.size / 2 + fish2.size / 2) {
-//                 calculateFishCollision(fish1, fish2);
-//             }
-//         }
-//     }
-// }
-
-// function calculateFishCollision(fish1, fish2) {
-//     let angle = atan2(fish2.y - fish1.y, fish2.x - fish1.y);
-//     let distance = dist(fish1.x, fish1.y, fish2.x, fish2.y);
-//     let overlapDistance = (fish1.size / 2 + fish2.size / 2 - distance) / 2;
-//     if (fish1.x < fish2.x) {
-//         fish1.x = fish1.x - overlapDistance * cos(angle);
-//         fish2.x = fish2.x + overlapDistance * cos(angle);
-//     } else {
-//         fish1.x = fish1.x + overlapDistance * cos(angle);
-//         fish2.x = fish2.x - overlapDistance * cos(angle);
-//     }
-//     if (fish1.y < fish2.y) {
-//         fish1.y = fish1.y - overlapDistance * sin(angle);
-//         fish2.y = fish2.y + overlapDistance * sin(angle);
-//         fish1.vy
-//     } else {
-//         fish1.y = fish1.y - overlapDistance * sin(angle);
-//         fish2.y = fish2.y + overlapDistance * sin(angle);
-//     }
-//     fish1.vx *= -1;
-//     fish2.vx *= -1;
-//     fish1.vy *= -1;
-//     fish2.vy *= -1;
-// }
