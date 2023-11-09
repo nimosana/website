@@ -2,8 +2,10 @@
 
 let week7Color = "#000000aa", week7LinkColor = "#000000aa";
 let randomColorR, randomColorG, randomColorB, randomColorREm, randomColorGEm, randomColorBEm;
+let posXOffset = 0, posYOffset = 0;
 
-setInterval(week8Color, 500);
+
+setInterval(week8Color, 10);
 document.addEventListener("keydown", keyUpListener);
 document.addEventListener("keyup", keyDownListener);
 function keyUpListener(event) {
@@ -27,6 +29,18 @@ function onClickWeek7() {
     week7Color = swap;
 
     document.getElementById("week7Link").style.color = week7LinkColor;
+    week7LinkColor = swap;
+}
+
+function onClickWeek8() {
+    let array = document.getElementsByClassName(`week8p`)
+    let swap = document.getElementById("week8p").style.color;
+
+    for (let document of array) {
+        document.style.color = week7Color;
+        document.style.color = week7LinkColor;
+    }
+    week7Color = swap;
     week7LinkColor = swap;
 }
 
