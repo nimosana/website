@@ -3,34 +3,29 @@
 const soundFile = new Audio("resources/sounds/bark.wav");
 let week7Color = "#000000aa", week7LinkColor = "#000000aa";
 let randomColorR, randomColorG, randomColorB, randomColorREm, randomColorGEm, randomColorBEm;
-let horizontalOffset = 0;
-let verticalOffset = 0;
+let rightKey, leftKey, upKey, downKey;
+let xOffset = 0;
+let yOffset = 0;
 
-let rightKey = false;
-let leftKey = false;
-let upKey = false;
-let downKey = false;
-let interval = setInterval(movePicture, 20);
-setInterval(week8Color, 500);
-setInterval(week9Color, 10);
-let posXOffset = 0, posYOffset = 0;
-
-
-setInterval(week8Color, 10);
 document.addEventListener("keydown", keyUpListener);
 document.addEventListener("keyup", keyDownListener);
+
+setInterval(movePicture, 20);
+setInterval(week8Color, 500);
+setInterval(week9Color, 10);
+setInterval(week8Color, 10);
 
 function keyUpListener(event) {
 
     if (event.keyCode == 68) {
         rightKey = true;
-    } else if (event.keyCode == 87) {
+    } if (event.keyCode == 87) {
         upKey = true;
-    } else if (event.keyCode == 83) {
+    } if (event.keyCode == 83) {
         downKey = true;
-    } else if (event.keyCode == 65) {
+    } if (event.keyCode == 65) {
         leftKey = true;
-    } else if (vent.keyCode == 192) {
+    } if (event.keyCode == 192) {
         window.alert("foshizzle");
     }
 }
@@ -39,15 +34,15 @@ function keyDownListener(event) {
 
     if (event.keyCode == 68) {
         rightKey = false;
-    } else if (event.keyCode == 87) {
+    } if (event.keyCode == 87) {
         upKey = false;
-    } else if (event.keyCode == 83) {
+    } if (event.keyCode == 83) {
         downKey = false;
-    } else if (event.keyCode == 65) {
+    } if (event.keyCode == 65) {
         leftKey = false;
-    } else if (event.keyCode == 192) {
+    } if (event.keyCode == 192) {
         window.alert("haeoifhaeoi");
-    } else if (event.keyCode == 16) {
+    } if (event.keyCode == 16) {
         let array = document.getElementsByClassName("answer");
 
         for (let i = 0; i < array.length; i = i + 1) {
@@ -60,43 +55,36 @@ function keyDownListener(event) {
         soundFile.play();
     }
 }
-
+w
 function movePicture() {
 
-
     if (rightKey) {
-        document.getElementById("moveimage").style.left = horizontalOffset + "px";
-        if (horizontalOffset <= 1000) {
-            horizontalOffset += 10;
+        document.getElementById("catGif").style.left = xOffset + "px";
+        if (xOffset <= 1000) {
+            xOffset += 10;
         } else {
-            horizontalOffset = 0
+            xOffset = 0
         }
-    }
-
-    if (leftKey) {
-        document.getElementById("moveimage").style.left = horizontalOffset + "px";
-        if (horizontalOffset >= 0) {
-            horizontalOffset -= 10;
+    } if (leftKey) {
+        document.getElementById("catGif").style.left = xOffset + "px";
+        if (xOffset >= 0) {
+            xOffset -= 10;
         } else {
-            horizontalOffset = 1000
+            xOffset = 1000
         }
-    }
-
-    if (upKey) {
-        document.getElementById("moveimage").style.top = verticalOffset + "px";
-        if (verticalOffset >= 0) {
-            verticalOffset -= 10;
+    } if (upKey) {
+        document.getElementById("catGif").style.top = yOffset + "px";
+        if (yOffset >= 0) {
+            yOffset -= 10;
         } else {
-            verticalOffset = 1000
+            yOffset = 1000
         }
-    }
-
-    if (downKey) {
-        document.getElementById("moveimage").style.top = verticalOffset + "px";
-        if (verticalOffset <= 1000) {
-            verticalOffset += 10;
+    } if (downKey) {
+        document.getElementById("catGif").style.top = yOffset + "px";
+        if (yOffset <= 1000) {
+            yOffset += 10;
         } else {
-            verticalOffset = 0
+            yOffset = 0
         }
     }
 }
@@ -152,8 +140,6 @@ function week9Color() {
     document.getElementById("week9Em").style.color = Color(randomColorREm, randomColorGEm, randomColorBEm);
     // document.getElementById("week8Em2").style.color = Color(randomColorREm, randomColorGEm, randomColorBEm);
 }
-
-
 
 // // document.getElementById("week6").innerHTML = "aaaaa";
 // document.getElementById("catGif").src = "https://people.com/thmb/ZRvBpMf4KK7HjBnSrZOYyqDU4Mk=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(749x0:751x2)/Dog-Birthday-Party-tout-052423-8cfd398176ce4a50b707ae8ec4406a12.jpg";
