@@ -105,7 +105,7 @@ body {
     overflow-x: auto;
     overflow-y: auto;
     /*text related*/
-    cursor: url('resources/cursor.png'),auto;
+    cursor: url('resources/cursor.png'), auto;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
     line-height: 1.69;
@@ -396,8 +396,18 @@ p {
 }
 
 img {
+    position: relative;
     margin: auto;
     justify-self: auto;
+}
+
+#moveimage {
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+
 }
 
 a.week4:link {
