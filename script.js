@@ -3,14 +3,16 @@
 const soundFile = new Audio("resources/sounds/bark.wav");
 let week7Color = "#000000aa", week7LinkColor = "#000000aa";
 let randomColorR, randomColorG, randomColorB, randomColorREm, randomColorGEm, randomColorBEm;
-let rightKey, leftKey, upKey, downKey;
+let dPressed, aPressed, wPressed, sPressed;
+let vx = 0;
+let vy = 0;
 let xOffset = 0;
 let yOffset = 0;
 
+setInterval(movePicture, 5);
 document.addEventListener("keydown", keyUpListener);
 document.addEventListener("keyup", keyDownListener);
 
-setInterval(movePicture, 20);
 setInterval(week8Color, 500);
 setInterval(week9Color, 10);
 setInterval(week8Color, 10);
@@ -18,33 +20,40 @@ setInterval(week8Color, 10);
 function keyUpListener(event) {
 
     if (event.keyCode == 68) {
-        rightKey = true;
+        dPressed = true;
+        vx += 1;
     } if (event.keyCode == 87) {
-        upKey = true;
+        wPressed = true;
+        vy -= 1;
     } if (event.keyCode == 83) {
-        downKey = true;
+        sPressed = true;
+        vy += 1;
     } if (event.keyCode == 65) {
-        leftKey = true;
+        aPressed = true;
+        vx -= 1;
     } if (event.keyCode == 192) {
-        window.alert("foshizzle");
+        window.alert("frrrrrr");
     }
 }
 
 function keyDownListener(event) {
 
     if (event.keyCode == 68) {
-        rightKey = false;
+        dPressed = false;
+        vx /= 1.03;
     } if (event.keyCode == 87) {
-        upKey = false;
+        wPressed = false;
+        vy /= 1.03;
     } if (event.keyCode == 83) {
-        downKey = false;
+        sPressed = false;
+        vy /= 1.03;
     } if (event.keyCode == 65) {
-        leftKey = false;
+        aPressed = false;
+        vx /= 1.03;
     } if (event.keyCode == 192) {
         window.alert("haeoifhaeoi");
     } if (event.keyCode == 16) {
         let array = document.getElementsByClassName("answer");
-
         for (let i = 0; i < array.length; i = i + 1) {
             console.log(`efheighrui`);
             let r = Math.floor(Math.random() * (200 - 80 + 1)) + 80;
@@ -55,37 +64,40 @@ function keyDownListener(event) {
         soundFile.play();
     }
 }
-w
-function movePicture() {
 
-    if (rightKey) {
-        document.getElementById("catGif").style.left = xOffset + "px";
-        if (xOffset <= 1000) {
-            xOffset += 10;
-        } else {
-            xOffset = 0
-        }
-    } if (leftKey) {
-        document.getElementById("catGif").style.left = xOffset + "px";
-        if (xOffset >= 0) {
-            xOffset -= 10;
-        } else {
-            xOffset = 1000
-        }
-    } if (upKey) {
-        document.getElementById("catGif").style.top = yOffset + "px";
-        if (yOffset >= 0) {
-            yOffset -= 10;
-        } else {
-            yOffset = 1000
-        }
-    } if (downKey) {
-        document.getElementById("catGif").style.top = yOffset + "px";
-        if (yOffset <= 1000) {
-            yOffset += 10;
-        } else {
-            yOffset = 0
-        }
+function movePicture() {
+    if (!aPressed && !dPressed) {
+        vx /= 1.03;
+    }
+    if (!wPressed && !sPressed) {
+        vy /= 1.03;
+    }
+    document.getElementById("catGif").style.left = xOffset + "px";
+    if (xOffset <= 1000) {
+        xOffset += vx;
+    } else {
+        xOffset = 0;
+    }
+
+    document.getElementById("catGif").style.left = xOffset + "px";
+    if (xOffset >= 0) {
+        xOffset += vx;
+    } else {
+        xOffset = 1000;
+    }
+
+    document.getElementById("catGif").style.top = yOffset + "px";
+    if (yOffset >= 0) {
+        yOffset += vy;
+    } else {
+        yOffset = 1000;
+    }
+
+    document.getElementById("catGif").style.top = yOffset + "px";
+    if (yOffset <= 1000) {
+        yOffset += vy;
+    } else {
+        yOffset = 0;
     }
 }
 
