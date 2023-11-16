@@ -1,0 +1,500 @@
+/*********************************************
+
+Here is a description of any special CSS used.
+In this case it's just padding and margin to 0
+and then centring the canvas (and anything else)
+using the CSS Grid.
+
+Also hides overflow.
+
+**********************************************/
+html {
+    scroll-behavior: smooth;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    padding: 0;
+    width: 100%;
+}
+
+/* Style the navbar */
+.navbar {
+    background-color: #000000aa;
+    height: 68px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+/* Style the list items */
+.navbar ul li {
+    position: relative;
+    line-height: 64px;
+    display: inline;
+    /* Display list items in a horizontal line */
+    /* margin: 0px 20px; */
+}
+
+.navbar ul li.current {
+    background-color: #ffffffaa;
+    color: black;
+    padding: 50px 0px;
+    /* Background color for the current link */
+    cursor: not-allowed;
+    /* Change cursor to indicate non-clickable */
+    pointer-events: none;
+    /* Make it non-clickable */
+}
+
+.navbar ul li.current a {
+    color: black;
+}
+
+/* Style the links */
+.navbar ul li a {
+    font-size: 20pt;
+    padding: 0px 20px;
+    color: #fff;
+    border: none;
+    transition: .4s ease-in;
+    z-index: 1;
+    /* Text color for links */
+    text-decoration: none;
+    /* Remove underlines from links */
+}
+
+.navbar ul li a::before,
+.navbar ul li a::after {
+    position: absolute;
+    content: "";
+    z-index: -1;
+}
+
+
+.navbar ul li a:hover {
+    background-color: #ffffffaa;
+    color: black;
+    height: 68px;
+    padding: 50px 20px;
+    box-shadow: 0 0 25px #ff0000, 0 0 50px #00ff00, 0 0 100px #0000ff, 0 0 200px #000000;
+}
+
+body {
+    /*background image test */
+    background-image: url('../resources/nimosana_darker.gif');
+    background-repeat: repeat;
+    background-position: center;
+    background-size: 68px;
+    background-position: top left;
+    background-attachment: fixed;
+    background-color: rgb(62, 47, 47);
+    color: #ff0000;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    /*auto center my stuffs*/
+    margin: auto;
+    max-width: auto;
+    /*SCROLL LETSGO */
+    overflow-x: auto;
+    overflow-y: auto;
+    /*text related*/
+    cursor: url('resources/cursor.png'), auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    line-height: 1.69;
+    padding: 102px 0px;
+}
+
+h1 {
+    /*Title*/
+    margin: auto;
+    justify-content: center;
+    max-width: 1100px;
+    background-image: url('../resources/nimosana_darker.gif');
+    background-position: 80px 175px;
+    background-size: 250px;
+    font-size: 50px;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    /*background-color: rgba(0, 0, 0, 0.7);*/
+}
+
+h1 span {
+    margin: auto;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 7px 7px;
+    border-radius: 10%;
+}
+
+h2 {
+    /*Week 1 header*/
+    color: aqua;
+    font-size: 30px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+h2 span {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 7px 7px;
+    border-top-right-radius: 20%;
+    border-top-left-radius: 20%;
+}
+
+.week2 {
+    margin: auto;
+    max-width: 1100px;
+    padding: 0px 50px;
+    color: lightblue;
+    /* background-image: url('resources/catgif.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; */
+}
+
+.week2p {
+    color: lightblue;
+    margin-bottom: 0px;
+}
+
+h3 {
+    /*Week 2 header*/
+    color: rgb(255, 145, 0);
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: -0.5px;
+}
+
+h3 span {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 7px 7px;
+    border-top-right-radius: 20%;
+    border-top-left-radius: 20%;
+}
+
+.week3 {
+    margin: auto;
+    max-width: 1100px;
+    padding: 0px 50px;
+}
+
+.week3p {
+    color: burlywood;
+}
+
+h4 {
+    /*Week 3 header*/
+    color: rgb(255, 0, 0);
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: -0.5px;
+}
+
+h4 span {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 7px 7px;
+    border-top-right-radius: 20%;
+    border-top-left-radius: 20%;
+}
+
+.week4 {
+    margin: auto;
+    max-width: 1100px;
+    padding: 0px 50px;
+}
+
+.week4p {
+    color: rgb(255, 150, 150);
+}
+
+h5 {
+    /*Week 4 header*/
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: -0.5px;
+}
+
+h5 span {
+    color: #a5ff7b;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 7px 7px;
+    border-top-right-radius: 20%;
+    border-top-left-radius: 20%;
+}
+
+.week5 {
+    margin: auto;
+    max-width: 1100px;
+    padding: 0px 50px;
+}
+
+.week5p {
+    color: rgb(0, 200, 0);
+}
+
+h6 {
+    /*Week 5 header*/
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: -0.5px;
+}
+
+h6 span {
+    color: rgb(255, 125, 210);
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 7px 7px;
+    border-top-right-radius: 20%;
+    border-top-left-radius: 20%;
+}
+
+.week6 {
+    margin: auto;
+    max-width: 1100px;
+    padding: 0px 50px;
+}
+
+
+.week6p {
+    color: #ffc8ff;
+}
+
+h6.h7 {
+    /*Week 7 header*/
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: -0.5px;
+}
+
+h6.h7 span {
+    color: #fcff58;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 7px 7px;
+    border-top-right-radius: 20%;
+    border-top-left-radius: 20%;
+    border-bottom-right-radius: 0%;
+    border-bottom-left-radius: 0%;
+}
+
+.week7 {
+    margin: auto;
+    max-width: 1100px;
+    padding: 0px 50px;
+}
+
+.week7p {
+    color: #dbb32e;
+}
+
+.h7 {
+    /*image cred header*/
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+}
+
+.h7 span {
+    /*image cred header*/
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 7px 7px;
+    border-top-right-radius: 20%;
+    border-top-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+    border-bottom-left-radius: 20%;
+}
+
+h6.h8 {
+    /*Week 8 header*/
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: -0.5px;
+}
+
+h6.h8 span {
+    color: #00a4d6;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 7px 7px;
+    border-top-right-radius: 20%;
+    border-top-left-radius: 20%;
+    border-bottom-right-radius: 0%;
+    border-bottom-left-radius: 0%;
+}
+
+.week8 {
+    margin: auto;
+    max-width: 1100px;
+    padding: 0px 50px;
+}
+
+.week8p {
+    color: #c4c4c4;
+}
+
+.h8 {
+    /*image cred header*/
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+}
+
+.h8 span {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 7px 7px;
+    border-radius: 10%;
+}
+
+
+
+
+.em2 {
+    font-style: italic;
+    color: aqua;
+}
+
+.em3 {
+    color: rgb(255, 145, 0);
+}
+
+.em4 {
+    color: #ff0000;
+}
+
+.em5 {
+    color: #a5ff7b;
+}
+
+.em6 {
+    color: rgb(255, 125, 210);
+}
+
+.em7 {
+    color: #fcff58;
+}
+
+.em8 {
+    color: #ffffff;
+}
+
+p {
+    /*Any paragraph*/
+    margin-top: 0px;
+    font-size: 17px;
+    color: rgb(255, 150, 150);
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: justify;
+    /*set round border*/
+    border-radius: 1%;
+    caret-color: red;
+}
+
+img {
+    position: relative;
+    margin: auto;
+    justify-self: auto;
+}
+
+#catGif {
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+
+}
+
+a.week4:link {
+    /* default link color*/
+    padding: 0;
+    color: rgb(255, 150, 0);
+}
+
+a.week4:hover {
+    /* mouse on link color*/
+    color: rgb(255, 0, 0);
+}
+
+a.week4:active {
+    /* on click color*/
+    color: rgb(255, 0, 0);
+}
+
+a.week4:visited {
+    /* link already been clicked color*/
+    color: rgb(255, 0, 0);
+}
+
+a.week5:link {
+    padding: 0;
+    color: rgb(0, 255, 0);
+}
+
+a.week5:active {
+    color: rgb(0, 255, 0);
+}
+
+a.week5:hover {
+    color: #a5ff7b;
+}
+
+a.week5:visited {
+    color: #a5ff7b;
+}
+
+a.week6:link {
+    padding: 0;
+    color: rgb(255, 0, 255);
+}
+
+a.week6:active {
+    color: rgb(255, 0, 255);
+}
+
+a.week6:hover {
+    color: rgb(255, 125, 210);
+}
+
+a.week6:visited {
+    color: rgb(255, 125, 210);
+}
+
+a.week7:link {
+    padding: 0;
+    color: #ec8e00;
+}
+
+a.week7:active {
+    color: #fcff58;
+}
+
+a.week7:hover {
+    color: #fcff58;
+}
+
+a.week7:visited {
+    color: #fcff58;
+}
+
+a.week8:link {
+    padding: 0;
+    color: #ec8e00;
+}
+
+a.week8:active {
+    color: #fcff58;
+}
+
+a.week8:hover {
+    color: #fcff58;
+}
+
+a.week8:visited {
+    color: #fcff58;
+}
