@@ -60,6 +60,7 @@ ul {
   border: none;
   transition: .4s ease-in;
   z-index: 1;
+  cursor: url('../../resources/cursor.png'), auto;
   /* Text color for links */
   text-decoration: none;
   /* Remove underlines from links */
@@ -82,16 +83,6 @@ ul {
 }
 
 body {
-
-  /* Set up the grid and justify/align to center */
-  justify-content: center;
-  height: 100vh;
-  /* Body is the height of the viewport */
-  overflow: hidden;
-  /* Hide anything that goes off the window size */
-}
-
-body {
   justify-content: center;
   background-image: url('../../resources/nimosana_darker.gif');
   background-repeat: repeat;
@@ -108,10 +99,12 @@ body {
   /*auto center my stuffs*/
   margin: auto;
   max-width: auto;
+  overflow: hidden;
   /*SCROLL LETSGO */
   /* overflow-x: auto;
   overflow-y: auto; */
   /*text related*/
+  cursor: url('../../resources/cursor.png'), auto;
   font-family: Verdana,
     Geneva,
     Tahoma,

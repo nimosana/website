@@ -60,6 +60,7 @@ ul {
   border: none;
   transition: .4s ease-in;
   z-index: 1;
+  cursor: url('../../resources/cursor.png'), auto;
   /* Text color for links */
   text-decoration: none;
   /* Remove underlines from links */
@@ -101,6 +102,7 @@ body {
   /* overflow-x: auto;
   overflow-y: auto; */
   /*text related*/
+  cursor: url('../../resources/cursor.png'), auto;
   overflow: hidden;
   font-family: Verdana,
     Geneva,

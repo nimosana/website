@@ -73,7 +73,7 @@ function movePicture() {
         vy /= 1.03;
     }
     document.getElementById("catGif").style.left = xOffset + "px";
-    if (xOffset <= 1000) {
+    if (xOffset <= innerWidth) {
         xOffset += vx;
     } else {
         xOffset = 0;
@@ -83,18 +83,18 @@ function movePicture() {
     if (xOffset >= 0) {
         xOffset += vx;
     } else {
-        xOffset = 1000;
+        xOffset = innerWidth;
     }
 
     document.getElementById("catGif").style.top = yOffset + "px";
     if (yOffset >= 0) {
         yOffset += vy;
     } else {
-        yOffset = 1000;
+        yOffset = innerHeight;
     }
 
     document.getElementById("catGif").style.top = yOffset + "px";
-    if (yOffset <= 1000) {
+    if (yOffset <= innerHeight) {
         yOffset += vy;
     } else {
         yOffset = 0;

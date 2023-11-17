@@ -63,6 +63,7 @@ ul {
     border: none;
     transition: .4s ease-in;
     z-index: 1;
+    cursor: url('resources/cursor.png'), auto;
     /* Text color for links */
     text-decoration: none;
     /* Remove underlines from links */
@@ -411,7 +412,7 @@ img {
 }
 
 a.week4:link {
-    /* default link color*/
+    /* defaul;t link color*/
     padding: 0;
     color: rgb(255, 150, 0);
 }
