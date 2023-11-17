@@ -56,9 +56,9 @@ function keyDownListener(event) {
         let array = document.getElementsByClassName("answer");
         for (let i = 0; i < array.length; i = i + 1) {
             console.log(`efheighrui`);
-            let r = Math.floor(Math.random() * (200 - 80 + 1)) + 80;
-            let g = Math.floor(Math.random() * (200 - 80 + 1)) + 80;
-            let b = Math.floor(Math.random() * (200 - 80 + 1)) + 80;
+            let r = Math.floor(Math.random() * (200 - 150 + 1)) + 150;
+            let g = Math.floor(Math.random() * (200 - 150 + 1)) + 150;
+            let b = Math.floor(Math.random() * (200 - 150 + 1)) + 150;
             array[i].style.color = `rgb(${r},${g},${b})`;
         }
         soundFile.play();
