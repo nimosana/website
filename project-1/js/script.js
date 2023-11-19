@@ -39,6 +39,9 @@ let titleClown = {
     size: 250,
     texture: undefined
 };
+let backgroundPos = 0;
+setInterval(moveBackground, 50);
+
 
 /** Loads the textures/images used in the simulation*/
 function preload() {
@@ -581,4 +584,9 @@ function beginningAnimation() {
     //displays Clown & Clownette
     displayImage(titleClown, 0);
     displayImage(titleClownette, 0);
+}
+
+function moveBackground() {
+    backgroundPos++;
+    document.getElementById("body").style.backgroundPosition = `${backgroundPos}px ${backgroundPos}px`
 }

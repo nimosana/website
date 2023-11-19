@@ -20,6 +20,8 @@ let xOffset, yOffset;
 let x1, y1;
 let horizontalMovement, verticalMovement;
 
+let backgroundPos = 0;
+setInterval(moveBackground, 50);
 /**
  * Creates the canvas and sets the text size used in the animation.
 */
@@ -30,8 +32,8 @@ function setup() {
     mouseX = x1 = windowWidth / 2;
     mouseY = y1 = windowHeight / 2;
     horizontalMovement = verticalMovement = 0;
-    size = windowHeight*0.92;
-    createCanvas(windowWidth*0.98, size);
+    size = windowHeight * 0.92;
+    createCanvas(windowWidth * 0.98, size);
     textSize(size * 0.04);
     strokeWeight(size * 0.04)
     textAlign(CENTER, CENTER)
@@ -180,4 +182,9 @@ function bodyWiggle(maxOffset) {
     if (offset3 >= maxOffset || offset3 <= -maxOffset) {
         direction3 *= -1;
     }
+}
+
+function moveBackground() {
+    backgroundPos++;
+    document.getElementById("body").style.backgroundPosition = `${backgroundPos}px ${backgroundPos}px`
 }

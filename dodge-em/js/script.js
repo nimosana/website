@@ -52,6 +52,9 @@ let textSizeNumber = 60;
 let firstEndFrame = true;
 let finalSyringesDisplayed = 0, finalClownsDisplayed = 0;
 let state = "title";
+let backgroundPos = 0;
+
+setInterval(moveBackground, 50);
 /** load virus and user textures*/
 function preload() {
     virus.texture = loadImage('assets/images/virusTexture.png');
@@ -254,4 +257,9 @@ function drawSyringe(x, yDraw, size) {
     strokeWeight(1);
     triangle(x - size / 24, yDraw + (size / 1.09), x + size / 24, yDraw + (size / 1.09), x, yDraw + (size * 1.2));
     // ellipse(x, yDraw + size / 2, size); //check hitbox
+}
+
+function moveBackground() {
+    backgroundPos++;
+    document.getElementById("body").style.backgroundPosition = `${backgroundPos}px ${backgroundPos}px`
 }

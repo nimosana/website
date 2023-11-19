@@ -33,7 +33,11 @@ let user = {
         busy: false
     },
     texture: undefined
-}
+};
+
+let backgroundPos = 0;
+
+setInterval(moveBackground, 50);
 
 /** load the required textures for the fish and the user */
 function preload() {
@@ -302,4 +306,9 @@ function keyMovement() {
     user.boat.x += user.boat.vx;
     user.hook.xOrigin = user.boat.x + (user.boat.w * 0.83);
     user.hook.yOrigin = user.boat.y + (user.boat.h / 2);
+}
+
+function moveBackground() {
+    backgroundPos++;
+    document.getElementById("body").style.backgroundPosition = `${backgroundPos}px ${backgroundPos}px`
 }

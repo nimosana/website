@@ -38,6 +38,8 @@ let money = {
     size: undefined,
     texture: undefined
 }
+let backgroundPos = 0;
+setInterval(moveBackground, 50);
 
 let state = `title`; // Can be: title, simulation, love
 
@@ -104,11 +106,11 @@ function simulation() {
 function love() {
     push();
     for (let i = 0; i < 3000; i++) { //thats alot of money!
-        image(money.texture, random(-money.size/2, width), random(-money.size/2, height), money.size, money.size);
+        image(money.texture, random(-money.size / 2, width), random(-money.size / 2, height), money.size, money.size);
     }
     rectMode(CENTER);
     fill(0, 0, 0, 120)
-    rect(width / 2, height / 2, width*0.2, height*0.2);
+    rect(width / 2, height / 2, width * 0.2, height * 0.2);
     fill(255, 50, 50);
     text(`You found "love"\n\nClick to restart`, width / 2, height / 2);
     pop();
@@ -125,11 +127,11 @@ function love() {
 /** Display an alternative end animation if the user has earned enough money */
 function rich() {
     for (let i = 0; i < 3000; i++) { //thats alot of money!
-        image(money.texture, random(-money.size/2, width), random(-money.size/2, height), money.size, money.size);
+        image(money.texture, random(-money.size / 2, width), random(-money.size / 2, height), money.size, money.size);
     }
     rectMode(CENTER);
     fill(0, 0, 0, 120)
-    rect(width / 2, height / 2, width*0.5, height*0.3);
+    rect(width / 2, height / 2, width * 0.5, height * 0.3);
     fill(255, 50, 50);
     text(`You're way too rich for these clowns\n go get a Bugatti or something\n\nClick to restart`, width / 2, height / 2);
     if (mouseIsPressed) {
@@ -402,4 +404,9 @@ function displayImage(obj, type, specialTexture) {
             console.log("DisplayImage Wrong type bud: " + type);
             break;
     }
+}
+
+function moveBackground() {
+    backgroundPos++;
+    document.getElementById("body").style.backgroundPosition = `${backgroundPos}px ${backgroundPos}px`
 }

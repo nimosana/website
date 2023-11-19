@@ -10,6 +10,8 @@
 let clong;
 // the image used for the ball in the clong game
 let imageBalls;
+let backgroundPos = 0;
+setInterval(moveBackground, 50);
 
 /** load the assets used in the clong game */
 function preload() {
@@ -28,4 +30,9 @@ function setup() {
 /** runs the instance of the clong game */
 function draw() {
     clong.run();
+}
+
+function moveBackground() {
+    backgroundPos++;
+    document.getElementById("body").style.backgroundPosition = `${backgroundPos}px ${backgroundPos}px`
 }
