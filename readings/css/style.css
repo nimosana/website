@@ -41,18 +41,22 @@ ul {
 }
 
 .navbar ul li.current {
+    background-image: url('https://hybrid.concordia.ca/jdesplan/img/background.jpg');
+    background-size: cover;
     background-color: #ffffffaa;
-    color: black;
+    color: #ffffff;
     padding: 50px 0px;
     /* Background color for the current link */
     cursor: not-allowed;
     /* Change cursor to indicate non-clickable */
     pointer-events: none;
     /* Make it non-clickable */
+    z-index: -1;
 }
 
 .navbar ul li.current a {
-    color: black;
+    color: cyan;
+    z-index: -1;
 }
 
 /* Style the links */
@@ -62,7 +66,6 @@ ul {
     color: #fff;
     border: none;
     transition: .4s ease-in;
-    z-index: 1;
     cursor: url('../../resources/cursor.png'), auto;
     /* Text color for links */
     text-decoration: none;

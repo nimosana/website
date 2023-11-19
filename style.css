@@ -49,10 +49,12 @@ ul {
     /* Change cursor to indicate non-clickable */
     pointer-events: none;
     /* Make it non-clickable */
+    z-index: -1;
 }
 
 .navbar ul li.current a {
     color: black;
+    z-index: -1;
 }
 
 /* Style the links */
@@ -62,7 +64,6 @@ ul {
     color: #fff;
     border: none;
     transition: .4s ease-in;
-    z-index: 1;
     cursor: url('resources/cursor.png'), auto;
     /* Text color for links */
     text-decoration: none;
@@ -403,12 +404,67 @@ img {
 }
 
 #catGif {
-
     position: absolute;
     left: 0;
     top: 0;
     z-index: 1;
+}
 
+.portrait {
+    font-size: 20pt;
+    background-image: url('resources/Portrait_print.jpg');
+    background-size: cover;
+    color: #fff;
+    border: none;
+    transition: .4s ease-in;
+    cursor: url('resources/cursor.png'), auto;
+    /* Text color for links */
+    text-decoration: none;
+    /* Remove underlines from links */
+}
+
+.portrait::before,
+.portrait::after {
+    position: absolute;
+    content: "";
+    z-index: -1;
+    opacity: 1;
+    /* Initial opacity */
+    transition: opacity 0.4s ease-in;
+    /* Opacity transition */
+}
+
+.portrait:hover {
+    background-color: #ffffffaa;
+    color: black;
+    background-image: url('resources/Portrait_trash.jpg');
+    /* padding: 50px 20px; */
+    box-shadow: 0 0 25px #ff0000, 0 0 50px #00ff00, 0 0 100px #0000ff, 0 0 200px #000000;
+}
+
+.portraitLower span {
+    padding-top: 20px;
+    border-top-right-radius: 0%;
+    border-top-left-radius: 0%;
+    border-bottom-right-radius: 20%;
+    border-bottom-left-radius: 20%;
+    vertical-align: top;
+    line-height: 1;
+}
+
+.portrait:hover::before {
+    opacity: 0;
+    /* Fade out the before pseudo-element on hover */
+}
+
+.portrait::after {
+    opacity: 0;
+    /* Start with the after pseudo-element hidden */
+}
+
+.portrait:hover::after {
+    opacity: 1;
+    /* Fade in the after pseudo-element on hover */
 }
 
 a.week4:link {

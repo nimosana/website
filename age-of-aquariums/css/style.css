@@ -46,10 +46,12 @@ ul {
   /* Change cursor to indicate non-clickable */
   pointer-events: none;
   /* Make it non-clickable */
+  z-index: -1;
 }
 
 .navbar ul li.current a {
   color: #add8e6;
+  z-index: -1;
 }
 
 /* Style the links */

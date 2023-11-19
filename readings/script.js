@@ -1,6 +1,6 @@
 "use strict";
 
-const soundFile = new Audio("resources/sounds/bark.wav");
+const soundFile = new Audio("../resources/sounds/bark.wav");
 let week7Color = "#000000aa", week7LinkColor = "#000000aa";
 let dPressed, aPressed, wPressed, sPressed;
 let vx = 0;
