@@ -69,7 +69,6 @@ ul {
     cursor: url('resources/cursor.png'), auto;
     /* Text color for links */
     text-decoration: none;
-    /* Remove underlines from links */
 }
 
 .navbar ul li a::before,
@@ -379,6 +378,28 @@ h6.h8 span {
     color: #ff0000;
 }
 
+.control {
+    margin-top: 200px;
+}
+
+.controlHeader {
+    margin-bottom: -1px;
+}
+
+.controlHeaderLower span {
+    padding-top: 4px;
+    border-top-right-radius: 0%;
+    border-top-left-radius: 0%;
+    border-bottom-right-radius: 20%;
+    border-bottom-left-radius: 20%;
+    vertical-align: top;
+    line-height: 1;
+    z-index: -3;
+    color: rgba(255, 0, 0);
+}
+
+
+
 .em2 {
     font-style: italic;
     color: aqua;
@@ -444,7 +465,7 @@ img {
     cursor: url('resources/cursor.png'), auto;
     /* Text color for links */
     text-decoration: none;
-    /* Remove underlines from links */
+
 }
 
 .portrait::before,
@@ -474,23 +495,23 @@ img {
     color: #ff0000;
 }
 
-a.week4:link {
+a.media:link {
     /* defaul;t link color*/
     padding: 0;
     color: rgb(255, 150, 0);
 }
 
-a.week4:hover {
+a.media:hover {
     /* mouse on link color*/
     color: rgb(255, 0, 0);
 }
 
-a.week4:active {
+a.media:active {
     /* on click color*/
     color: rgb(255, 0, 0);
 }
 
-a.week4:visited {
+a.media:visited {
     /* link already been clicked color*/
     color: rgb(255, 0, 0);
 }

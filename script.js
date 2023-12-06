@@ -10,15 +10,16 @@ let yOffset = 68;
 let backgroundPos = 0;
 let lastScrollPos = 0;
 let speed = 0.5;
+let breathing = 0;
 document.addEventListener("keydown", keyUpListener);
 document.addEventListener("keyup", keyDownListener);
 window.addEventListener("scroll", scrollListener);
 
 setInterval(moveBackground, 50);
-setInterval(movePicture, 1);
-setInterval(week8Color, 500);
-setInterval(week9Color, 10);
-setInterval(week8Color, 10);
+// setInterval(movePicture, 1);
+setInterval(portraitColor, 150);
+// setInterval(week9Color, 10);
+// setInterval(week8Color, 10);
 
 function scrollListener(event) {
     let scrollDiff = lastScrollPos - window.scrollY;
@@ -120,7 +121,7 @@ function movePicture() {
 }
 
 function Color(r, g, b) {
-    return "rgb(" + r + ", " + g + "," + b + ")";
+    return "rgba(" + r + ", " + g + "," + b + ")";
 }
 
 function onClickWeek7() {
@@ -145,16 +146,18 @@ function onClickWeek8() {
     week7LinkColor = swap;
 }
 
-function week8Color() {
-    document.getElementById("week8p").style.color = Color(Math.floor(Math.random() * (200 - 80 + 1)) + 80, Math.floor(Math.random() * (200 - 80 + 1)) + 80, Math.floor(Math.random() * (200 - 80 + 1)) + 80);
-    document.getElementById("week8H").getElementsByTagName("span")[0].style.color = Color(Math.floor(Math.random() * (255 - 150 + 1)) + 150, Math.floor(Math.random() * (255 - 150 + 1)) + 150, Math.floor(Math.random() * (255 - 150 + 1)) + 150);
-    document.getElementById("week8Em").style.color = Color(Math.floor(Math.random() * (255 - 150 + 1)) + 150, Math.floor(Math.random() * (255 - 150 + 1)) + 150, Math.floor(Math.random() * (255 - 150 + 1)) + 150);
-    document.getElementById("week8Em2").style.color = Color(Math.floor(Math.random() * (255 - 150 + 1)) + 150, Math.floor(Math.random() * (255 - 150 + 1)) + 150, Math.floor(Math.random() * (255 - 150 + 1)) + 150);
+function portraitColor() {
+    document.getElementById("portraitTop").getElementsByTagName("span")[0].style.color = Color(Math.floor(Math.random() * (160 - 120)) + 120, Math.floor(Math.random() * (30 - 15)), Math.floor(Math.random() * (30 - 15)));
+    let sinValue = Math.sin(breathing * 0.2);
+    let breathingValue = Math.floor(((sinValue + 1) / 2 * 120));
+    console.log(breathingValue)
+    breathing++;
+    document.getElementById("portraitBottom").getElementsByTagName("span")[0].style.color = Color(breathingValue, 0, 0);
 }
 
 function week9Color() {
-    document.getElementById("week9p").style.color = Color(Math.floor(Math.random() * (200 - 80 + 1)) + 80, Math.floor(Math.random() * (200 - 80 + 1)) + 80, Math.floor(Math.random() * (200 - 80 + 1)) + 80);
-    document.getElementById("week9H").getElementsByTagName("span")[0].style.color = Color(Math.floor(Math.random() * (255 - 150 + 1)) + 150, Math.floor(Math.random() * (255 - 150 + 1)) + 150, Math.floor(Math.random() * (255 - 150 + 1)) + 150);
+    document.getElementById("week9p").style.color = Color(Math.floor(Math.random() * (200 - 80 + 1)) + 80, Math.floor(Math.random() * (30 - 15)), Math.floor(Math.random() * (30 - 15)));
+    document.getElementById("portraitTop").getElementsByTagName("span")[0].style.color = Color(Math.floor(Math.random() * (255 - 150 + 1)) + 150, Math.floor(Math.random() * (255 - 150 + 1)) + 150, Math.floor(Math.random() * (255 - 150 + 1)) + 150);
     document.getElementById("week9Em").style.color = Color(Math.floor(Math.random() * (255 - 150 + 1)) + 150, Math.floor(Math.random() * (255 - 150 + 1)) + 150, Math.floor(Math.random() * (255 - 150 + 1)) + 150);
     // document.getElementById("week8Em2").style.color = Color(randomColorREm, randomColorGEm, randomColorBEm);
 }
