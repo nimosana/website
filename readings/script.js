@@ -9,7 +9,7 @@ let xOffset = 0;
 let yOffset = 68;
 let backgroundPos = 0;
 let lastScrollPos = 0;
-let speed = 0.5;
+let speed = 0.25;
 document.addEventListener("keydown", keyUpListener);
 document.addEventListener("keyup", keyDownListener);
 window.addEventListener("scroll", scrollListener);
@@ -29,10 +29,6 @@ function scrollListener(event) {
         yOffset -= Math.abs(scrollDiff);
         lastScrollPos = window.scrollY;
     }
-
-    // lastScrollPos = Math.abs(lastScrollPos - window.scrollY);
-    // yOffset += Math.abs(lastScrollPos - window.scrollY);
-    // lastScrollPos = window.scrollY;
 }
 function keyUpListener(event) {
 

@@ -6,6 +6,7 @@
     <title>
         NiMoSana
     </title>
+    <link rel="icon" href="https://hybrid.concordia.ca/ni_moral/resources/icon.png" type="image/png">
     <link rel="stylesheet" href="style.css">
     <script src="libraries/p5.min.js"></script>
     <script src="libraries/p5.sound.min.js"></script>
@@ -50,7 +51,7 @@
         </video>
     </div>
     <div class="media">
-        <h2 class="mediaHeader">
+        <h2 class="mediaHeader" id="questionTruth">
             <span>
                 Question your truth, question what you're told
             </span>
@@ -59,7 +60,7 @@
             <source src="https://hybrid.concordia.ca/ni_moral/resources/sinclair-media.mp4" type="video/mp4">
             Your browser does not support the video.
         </video>
-        <h2 class="mediaHeaderLower">
+        <h2 class="mediaHeaderLower" id="yourInterests">
             <span>
                 Defending your interests, <a class="media" class=""
                     href="https://ca.finance.yahoo.com/quote/FOXA/holders?p=FOXA">or
@@ -73,21 +74,21 @@
         </video>
     </div>
     <div class="control">
-        <h2 class="controlHeader">
+        <h2 class="controlHeader" id="noReturn">
             <span>
-                Have we crossed the point of no return?
+                Have <em class="spanNoReturn">we crossed the point of no return</em>?
             </span>
         </h2>
-        <iframe width="800" height="450" src="https://www.youtube.com/embed/G7H9uo3j5FQ" frameborder="0"
+        <iframe class="ytVid" width="800" height="450" src="https://www.youtube.com/embed/G7H9uo3j5FQ" frameborder="1"
             allowfullscreen></iframe>
-        <iframe width="800" height="450" src="https://www.youtube.com/embed/OiNlCXGt2IY" frameborder=" 0"
+        <iframe class="ytVid" width="800" height="450" src="https://www.youtube.com/embed/OiNlCXGt2IY" frameborder="1"
             allowfullscreen></iframe>
-        <iframe width="800" height="450" src="https://www.youtube.com/embed/Mvh4o6x3-GQ" frameborder=" 0"
+        <iframe class="ytVid" width="800" height="450" src="https://www.youtube.com/embed/Mvh4o6x3-GQ" frameborder="1"
             allowfullscreen></iframe>
-        <iframe width="800" height="450" src="https://www.youtube.com/embed/omAk1gMyw7E" frameborder=" 0"
+        <iframe class="ytVid" width="800" height="450" src="https://www.youtube.com/embed/omAk1gMyw7E" frameborder="1"
             allowfullscreen></iframe>
     </div>
-    <h2 class="controlHeaderLower">
+    <h2 class="controlHeaderLower" id="whatsNext">
         <span>
             What's next?
         </span>
@@ -96,8 +97,28 @@
             <source src="https://hybrid.concordia.ca/ni_moral/resources/Flobots-Handlebars.mp4" type="video/mp4">
             Your browser does not support the video.
         </video></div>
-    <div> </div>
-
+    <div>
+        <img id="logo" onclick="swapBackground()" src="https://hybrid.concordia.ca/ni_moral/resources/icon.png"
+            width="68">
+    </div>
+    <div class="attributions">
+        <h3>
+            <span>
+                <em class="em4">Attributions:</em>
+            </span>
+        </h3>
+        <p class="attributionsP"><br><em class="em11">3 Songs are used in this project:</em><br><br><em
+                class="em5">"Machines"</em><em class="em11"> by</em>
+            <em class="em6">Modestep</em><em class="em11">,</em><br><em class="em7">"Sly fox"</em> <em class="em11">
+                by</em><em class="em8">
+                Nas</em><em class="em11">,</em><br><em class="em9">"Handlebars"</em> <em class="em11"> by</em> <em
+                class="em10">Flobots</em><em class="em11">.</em><br><br><em class="em11">Please note that
+                the inclusion of
+                these songs is for
+                educational &
+                non-commercial purposes. All credits and rights belong to their respective copyright holders.</em>
+        </p>
+    </div>
 </body>
 
 </html>
