@@ -1,4 +1,0 @@
-# Project 1: The Clownapping
-## Nicolas Morales-Sanabria
-
-This simulation is a playable game that tells the tragic alien kidnapping of clown & clownette, it is a survival game where clown needs to beat waves of evil clowns to save clownette. It begins with an animation where the clowns get kidnapped and taken to the "clowniseum". The gameplay allows the user to control the clown, he is being attacked by evil clowns and must aim and shoot them with the mouse. The player must survive to round 20 to win the game. If the player dies, the player is told he didn't save clownette and is prompted to restart the game, at the end of round 20 a winning ending screen is displayed.
